@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sunny Kumar | Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #3498db;
+      --bg-color: grey;
+      --text-color: purple;
+      --card-bg: silver;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: #ddd;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid black;
+    }
+
+    .intro h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .intro p {
+      font-size: 1.1em;
+      color: lightgray;
+    }
+
+    nav {
+      background: purple;
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: orangered;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--secondary-color);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(129, 53, 129, 0.1);
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      border-bottom: 2px solid aquamarine;
+      padding-bottom: 8px;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    .project {
+      margin-bottom: 25px;
+    }
+
+    .project h3 {
+      margin-bottom: 8px;
+    }
+
+    .project a {
+      color: var(--secondary-color);
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-links a {
+      display: block;
+      color: var(--secondary-color);
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: skyblue;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with profile on left -->
+  <header>
+    <div class="header-content">
+      <img src="Images1/sunny now.jpg" alt="Sunny Kumar" class="profile-img" />
+      <div class="intro">
+        <h1>Sunny Kumar</h1>
+        <p>Web Developer | Programmer | Tech Enthusiast</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#collaborations">Collaborations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>Sunny Kumar</strong>, a dedicated web developer with a strong foundation in modern web technologies.
+      I’m currently pursuing Computer Science and love building responsive, interactive websites and apps that solve
+      real-world problems. I enjoy exploring new tools and turning creative ideas into real applications.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5, CSS3</li>
+      <li>React.js, Express</li>
+      <li>Python, C++</li>
+      <li>Git, GitHub, VS Code</li>
+      <li>Responsive & Mobile-First Web Design</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>1. Portfolio Website</h3>
+      <p>A sleek personal portfolio designed using HTML5, CSS3, and JavaScript to showcase skills, projects, and contact info.</p>
+      <a href="#">View Project</a>
+    </div>
+
+    <div class="project">
+      <h3>2. To-Do List App</h3>
+      <p>React-based task manager with Firebase integration for real-time updates and task persistence.</p>
+      <a href="#">View Project</a>
+    </div>
+
+    <div class="project">
+      <h3>3. Weather Forecast App</h3>
+      <p>A weather application built with OpenWeather API and Vanilla JS with intuitive UI and dynamic updates.</p>
+      <a href="#">View Project</a>
+    </div>
+  </section>
+
+  <!-- Collaborations Section -->
+  <section id="collaborations">
+    <h2>Collaborations</h2>
+    <p>I love collaborating with developers and designers on exciting and impactful projects. If you're interested in teaming up on open-source, hackathons, or freelance work, feel free to reach out!</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to connect with me through the following platforms:</p>
+    <div class="contact-links">
+      <a href="mailto:sunnykr7601149@gmail.com">📧 sunnykr7601149@gmail.com</a>
+      <a href="https://github.com/sunnykrin" target="_blank">💻 GitHub: github.com/sunnykrin</a>
+      <a href="https://instagram.com/sunny_kr_in" target="_blank">📷 Instagram: @sunny_kr_in</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sunny Kumar. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
